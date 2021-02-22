@@ -93,10 +93,81 @@ ut tempus lorem consectetur. Nam viverra metus risus, non vulputate nulla tristi
                 </div>
             <!-- </section> -->
         
+            <!-- CONTACT FORM -->
         <section class="section-contact-form">
-            <div class="row">
-                <h2 id="my-contact-form">We would be happy to hear from you! </h2>
+            <div class="container">
+                <h2 id="my-contact-form">Contact Us <br>We would be happy to hear from you! </h2>
             </div>
+                 <div class="container">
+                    <form method="post" action="#" class="contact-form"></form>
+                        <div class="row">
+                            <!-- NAME -->
+                            <div class="col span-1-of-3">
+                                <label>Name</label>
+                            </div>
+                            <div class="col span-2-of-3">
+                                <input type="text"  id="name" placeholder="Your name...">
+                            </div>
+                        </div>
+
+                        <!-- EMAIL -->
+                        <div class="row">
+                            <div class="col span-1-of-3">
+                                <label>Email</label>
+                            </div>
+                            <div class="col span-2-of-3">
+                                <input type="email"  id="email" placeholder="Enter your email...">
+                            </div>
+                        </div>
+            
+                    <!-- HOW DID YOU HEAR ABOUT US -->
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label>How did you hear from us?</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <select name="find-us" id="find-us">
+                                <option value="friends...">Friends</option>
+                                <option value="search">Search</option>
+                                <option value="ad">Adversitiment</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <!-- NEWSLETTER -->
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label>Newsletter</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="checkbox" name="news" id="news" checked> Yes, please
+                        </div>
+                    </div>
+
+                    <!-- DROP US A LINE -->
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label>Drop us a line</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <textarea name="message" placeholder="Your message"></textarea> 
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label>&nbsp;</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <!-- <input type="submit" value="Send it!"> -->
+                            <button type="submit" class="btn btn-primary my-1">Send it!</button>
+                        </div>
+                    </div>
+
+                </div>
+            </form>
+
         </section>
     
         <!-- Optional JavaScript; choose one of the two! -->
