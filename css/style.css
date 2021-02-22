@@ -136,6 +136,35 @@ header {
     left: 700px;
 } */
 
+/* ====================== */
+/*     CONTACT FORM       */
+/* ===================== */
+.contact-form {
+    width: 60%;
+    margin: 0 auto;
+}
+
+input[type=text],
+input[type=email],
+select,
+textarea {
+    /* so that fields fill the whole area */
+    width: 100%;
+    /* to make the fields a litte bit bigger */
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+textarea {
+    /* make the message area larger */
+    height: 100px;
+}
+
+/* ====================== */
+/*       FOOTER          */
+/* ===================== */
+
 .my-footer {
     margin-top: 10%;
 }
@@ -260,8 +289,6 @@ nav ul li {
     .about_me {
         margin-top: 40%;
     }
-    
-
 
 @media screen and (max-width: 680px) {
 

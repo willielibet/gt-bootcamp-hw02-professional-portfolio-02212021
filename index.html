@@ -44,7 +44,7 @@
       </div>
 
 
-      <!-- MEDIA QUERIES -->
+    <!-- MEDIA QUERIES -->
 </nav>
     </header>
     <!-- MAIN BEGINS HERE -->
@@ -82,11 +82,11 @@ Morbi a tortor volutpat, aliquet lorem ut, aliquam nulla. Morbi faucibus consect
 Suspendisse ac massa ac sapien facilisis sollicitudin. Maecenas porttitor ex nec laoreet pellentesque. 
 Mauris commodo mauris a ipsum laoreet, eget cursus odio pretium. Cras pharetra arcu ut purus sagittis, 
 ut tempus lorem consectetur. Nam viverra metus risus, non vulputate nulla tristique vitae. Nunc consequat
- maximus tortor eget vestibulum. Sed malesuada tortor interdum, efficitur dolor nec, imperdiet justo. 
- Phasellus quis maximus leo. Aliquam erat volutpat. Ut bibendum convallis est id facilisis. Praesent 
- eget cursus magna. Praesent eros sapien, pulvinar eu lectus a, commodo scelerisque erat. Nam vel consequat odio, 
- in mollis diam. Praesent in feugiat magna. Pellentesque ante arcu, faucibus et ultrices at, porta fermentum 
- orci. Nunc vestibulum elit nec odio mollis, ut dignissim odio fermentum.
+maximus tortor eget vestibulum. Sed malesuada tortor interdum, efficitur dolor nec, imperdiet justo. 
+Phasellus quis maximus leo. Aliquam erat volutpat. Ut bibendum convallis est id facilisis. Praesent 
+eget cursus magna. Praesent eros sapien, pulvinar eu lectus a, commodo scelerisque erat. Nam vel consequat odio, 
+in mollis diam. Praesent in feugiat magna. Pellentesque ante arcu, faucibus et ultrices at, porta fermentum 
+orci. Nunc vestibulum elit nec odio mollis, ut dignissim odio fermentum.
 
                         </p>
                     </section>
@@ -95,15 +95,17 @@ ut tempus lorem consectetur. Nam viverra metus risus, non vulputate nulla tristi
         
             <!-- CONTACT FORM -->
         <section class="section-contact-form">
+            <hr>
             <div class="container">
-                <h2 id="my-contact-form">Contact Us <br>We would be happy to hear from you! </h2>
+                <!-- <h2 id="my-contact-form">Contact Us<br></h2> -->
+                <h2 class="hear-from-you">We would be happy to hear from you!</h2>
             </div>
-                 <div class="container">
+                <div class="container">
                     <form method="post" action="#" class="contact-form"></form>
                         <div class="row">
                             <!-- NAME -->
                             <div class="col span-1-of-3">
-                                <label>Name</label>
+                                <label for="name">Name</label>
                             </div>
                             <div class="col span-2-of-3">
                                 <input type="text"  id="name" placeholder="Your name...">
@@ -113,61 +115,59 @@ ut tempus lorem consectetur. Nam viverra metus risus, non vulputate nulla tristi
                         <!-- EMAIL -->
                         <div class="row">
                             <div class="col span-1-of-3">
-                                <label>Email</label>
+                                <label for="email">Email</label>
                             </div>
                             <div class="col span-2-of-3">
                                 <input type="email"  id="email" placeholder="Enter your email...">
                             </div>
                         </div>
             
-                    <!-- HOW DID YOU HEAR ABOUT US -->
-                    <div class="row">
-                        <div class="col span-1-of-3">
-                            <label>How did you hear from us?</label>
+                        <!-- HOW DID YOU HEAR ABOUT US -->
+                        <div class="row">
+                            <div class="col span-1-of-3">
+                                <label for="find-us">How did you hear from us?</label>
+                            </div>
+                            <div class="col span-2-of-3">
+                                <select name="find-us" id="find-us">
+                                    <option value="friends...">Friends</option>
+                                    <option value="search">Search</option>
+                                    <option value="ad">Adversitiment</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
                         </div>
-                        <div class="col span-2-of-3">
-                            <select name="find-us" id="find-us">
-                                <option value="friends...">Friends</option>
-                                <option value="search">Search</option>
-                                <option value="ad">Adversitiment</option>
-                                <option value="other">Other</option>
-                            </select>
+                        
+                        <!-- NEWSLETTER -->
+                        <div class="row">
+                            <div class="col span-1-of-3">
+                                <label for="news">Newsletter</label>
+                            </div>
+                            <div class="col span-2-of-3">
+                                <input type="checkbox" name="news" id="news" checked> Yes, please
+                            </div>
                         </div>
-                    </div>
-                    
-                    <!-- NEWSLETTER -->
-                    <div class="row">
-                        <div class="col span-1-of-3">
-                            <label>Newsletter</label>
-                        </div>
-                        <div class="col span-2-of-3">
-                            <input type="checkbox" name="news" id="news" checked> Yes, please
-                        </div>
-                    </div>
 
-                    <!-- DROP US A LINE -->
-                    <div class="row">
-                        <div class="col span-1-of-3">
-                            <label>Drop us a line</label>
+                        <!-- DROP US A LINE -->
+                        <div class="row">
+                            <div class="col span-1-of-3">
+                                <label for="message">Drop us a line</label>
+                            </div>
+                            <div class="col span-2-of-3">
+                                <textarea name="message" placeholder="Your message"></textarea> 
+                            </div>
                         </div>
-                        <div class="col span-2-of-3">
-                            <textarea name="message" placeholder="Your message"></textarea> 
-                        </div>
-                    </div>
 
-                    <div class="row">
-                        <div class="col span-1-of-3">
-                            <label>&nbsp;</label>
+                        <div class="row">
+                            <div class="col span-1-of-3">
+                                <label>&nbsp;</label>
+                            </div>
+                            <div class="col span-2-of-3">
+                                <!-- <input type="submit" value="Send it!"> -->
+                                <button type="submit" class="btn btn-primary my-1">Send it!</button>
+                            </div>
                         </div>
-                        <div class="col span-2-of-3">
-                            <!-- <input type="submit" value="Send it!"> -->
-                            <button type="submit" class="btn btn-primary my-1">Send it!</button>
-                        </div>
-                    </div>
-
                 </div>
             </form>
-
         </section>
     
         <!-- Optional JavaScript; choose one of the two! -->
