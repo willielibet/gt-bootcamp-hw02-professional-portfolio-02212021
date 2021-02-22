@@ -9,12 +9,11 @@
 }
 
 html {
-    background-color: #fff;
-    color: blue;
+    background-color:blue;
+    color: #fff;
     font-family: 'Lato', 'Arial', sans-serif;
     font-weight: 300;
     font-size: 20px;
-    text-rendering: optimizeLegibility;
 }
 
 h1 {
@@ -33,43 +32,34 @@ h1 {
 /* ------------------------------------*/
 
 header {
+    /* makes header's bg image kind of faded */
     background-image: linear-gradient(rgba(0, 0, 0, 0.7),
-                    rgba(0, 0, 0, 0.7));
-    /* background-size: cover; 
-    background-position: center; */
+                    rgba(0, 0, 0, 0.7)), url(img/binary02.png);
+
     /* Controls the size of the navbar header ABOUT ME MY WORK PORTFOLIO CONTACT */
-    height: 35vh;
-    /*background-attachment: fixed;*/ /*background image remains fixed
-                                    while text moves up and down 
-                                    as you scroll. */
+    height: 50vh;
 }
 
-.willie-pix {
-    /* position absolute positions Welcome to my Portfolio! My name is Willie where I want it */
-    position: absolute;
-    /* total width of Welcome to my Portfolio! My name is Willie */
-    width: 1140px;
-    /* positions Welcome to my Portfolio! My name is Willie vertically */
-    top: 40%;
-    left: 50%;
+.subtitle {
+    display: flex;
     /* keeps Welcome to my Portfolio! My name is Willie horizontally to the left */
     /* transform: translate(x-axis, y-axis)*/
-    transform: translate(13%, -160%);
-    background-color: #6495ED; 
+    transform: translate(5%, 20%);
+    background-color: #6466ed;
+    margin-left: 54%;
     height: 15%;
     width: 40%;
     /* padding: top, right, bottom, left */
-    padding: 0px 0px 0% 0px;
-    /* margin-bottom: 0%; */
+    /* padding: 0px 0px 0% 10%; */
 }
 
-.nav-links {
+/* .nav-links {
     float: right;
     list-style: none;
     margin-top: 55px;
     margin-right: 55px;
     font-size: 120%;
-}
+} */
 
 .nav-links li {
     display: inline-block;
@@ -82,16 +72,16 @@ header {
     /* adds bottom padding to the underline link (orange) when hovering */
     padding: 8px 0;
     color: #fff;
-    /*takes away underline from nav links */
+    /*takes away double underlining from nav links */
     text-decoration: none;
     /* text-transform: uppercase; */
     font-size: 90%;
     /* border-bottom: 2px solid transparent; */
-    /* transition: border-bottom 0.2s; */
+    transition: 30s;
 }
 
-.nav-links li a:hover,
-.nav-links li a:active {
+.nav-item a:hover,
+.nav-item a:active {
     border-bottom: 2px solid #e67e22; 
 }
 
@@ -101,9 +91,41 @@ header {
     margin-top: 55px;
     color: white;
     /* display: inline-block; */
-    margin-left: 0px;
+    margin-left: 0%;
     /* padding for Willie's background color */
     padding-left: 10%;
     font-size: 220%;
-    background-color: #6495ED;
+    background-color: #6466ed;
+}
+
+.nav-item {
+    display: flex;
+    float: right;
+    list-style: none;
+    margin-top: 1px;
+    color: white;
+    display: inline-block;
+    margin-top: -3%;
+    font-size: 150%;
+}
+
+.my-picture {
+    float: left;
+    margin-left: 10px;
+    width: 80%;
+    height: 600px;
+}
+
+/* SOURCE: https://www.sitepoint.com/community/t/decorative-vertical-line-div-centered-between-two-floating-divs/4609 */
+.vertLine {
+	border-left: 2px solid #2A437F;
+    height: 800px;
+    /* I manually centered this since margin auto doesn't automatically place it */
+	position: absolute; 
+    left: 700px;
+
+}
+
+.my-footer {
+    margin-top: 10%;
 }
