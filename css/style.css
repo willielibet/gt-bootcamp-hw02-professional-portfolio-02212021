@@ -147,6 +147,25 @@ header {
 
 /* when the screen is wider than 480px */
 
+@media screen and (max-width: 1150px) {
+
+    /* when the screen is 680px set the direction of the flex items to be in a row */
+                
+nav ul {
+    flex-direction: column;
+    align-items:center;
+    justify-content: flex-end;
+}
+
+nav ul li {
+    flex: 0 0 3rem;
+}
+
+.about_me {
+    margin-top: 20%;
+}
+
+
 @media screen and (max-width: 1050px) {
 
 /* when the screen is 1050px set the direction of the flex items to be in a row */
@@ -195,7 +214,7 @@ background:none;
 } */
 
 .about_me {
-    margin-top: 10%;
+    margin-top: 20%;
 }
 
 .subtitle {
@@ -204,9 +223,28 @@ background:none;
     width: auto;
 }
 
-@media screen and (max-width: 680px) {
 
-    /* when the screen is 680px set the direction of the flex items to be in a row */
+@media screen and (max-width: 780px) {
+
+/* when the screen is 780px set the direction of the flex items to be in a row */
+    
+nav ul {
+    flex-direction: column;
+    align-items:center;
+    justify-content: flex-end;
+}
+
+nav ul li {
+    flex: 0 0 3rem;
+}
+
+.about_me {
+    margin-top: 20%;
+}
+
+@media screen and (max-width: 720px) {
+
+    /* when the screen is 780px set the direction of the flex items to be in a row */
         
     nav ul {
         flex-direction: column;
@@ -217,12 +255,66 @@ background:none;
     nav ul li {
         flex: 0 0 3rem;
     }
+    
+    .about_me {
+        margin-top: 40%;
+    }
+    
 
+
+@media screen and (max-width: 680px) {
+
+    /* when the screen is 680px set the direction of the flex items to be in a row */
+                
+nav ul {
+    flex-direction: column;
+    align-items:center;
+    justify-content: flex-end;
+}
+
+nav ul li {
+    flex: 0 0 3rem;
+}
+
+.about_me {
+    margin-top: 55%;
+}
+
+@media screen and (max-width: 620px || max-width: 580px) {
+
+    /* when the screen is 680px set the direction of the flex items to be in a row */
+                
+nav ul {
+    flex-direction: column;
+    align-items:center;
+    justify-content: flex-end;
+}
+
+nav ul li {
+    flex: 0 0 3rem;
+}
+
+.about_me {
+    margin-top: 35%;
+}
+
+
+@media screen and (max-width: 470px) {
+
+    /* when the screen is 780px set the direction of the flex items to be in a row */
+        
+    nav ul {
+        flex-direction: column;
+        align-items:center;
+        justify-content: flex-end;
+    }
+    
+    nav ul li {
+        flex: 0 0 3rem;
+    }
     
     .about_me {
         margin-top: 55%;
     }
-    
 
-    
-    
+
