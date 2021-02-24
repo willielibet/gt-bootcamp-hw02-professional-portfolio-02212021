@@ -39,14 +39,6 @@ header {
   height: 150vh;
 }
 
-#header-about {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(./img/pizza.jpg) 20% 30% / cover;
-  height: 6rem;
-  border-bottom: 3px solid blue;
-  /* margin-bottom: 30px; */
-}
-
 .current {
   border-color: orange;
 }
@@ -78,16 +70,6 @@ header {
   color: white;
 }
 
-.nav-about {
-  float: right;
-  list-style: none;
-  /* margin-top: 2px; */
-  margin-right: 55px;
-  margin-bottom: 200px;
-  font-size: 125%;
-  color: white;
-}
-
 /* MY NAME */
 .my-name {
   float: left;
@@ -102,20 +84,9 @@ header {
   background-color: #6466ed;
 }
 
-.my-name-about {
-  float: left;
-  list-style: none;
-  margin-top: 5px;
-  color: white;
-  /* display: inline-block; */
-  margin-left: 0%;
-  /* padding for Willie's background color */
-  padding-left: 10%;
-  font-size: 220%;
-  background-color: #6466ed;
-}
-
-/* SPECIALIZE SECTION */
+/*========================*/
+/*   SPECIALIZE SECTION   */
+/*========================*/
 .specialize {
   padding-top: 15px;
   text-align: center;
@@ -133,7 +104,28 @@ header {
   color: white;
 }
 
-/* ABOUT ME */
+/*========================*/
+/*     ABOUT ME PAGE      */
+/*========================*/
+.nav-about-link {
+  display: flex;
+  /* flex-wrap: wrap; */
+  float: right;
+  list-style: none;
+  /* margin-top: 2px; */
+  margin-right: 55px;
+  margin-bottom: 200px;
+  font-size: 125%;
+  color: white;
+}
+
+#header-about {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(./img/pizza.jpg) 20% 30% / cover;
+  height: 6rem;
+  border-bottom: 3px solid blue;
+  /* margin-bottom: 30px; */
+}
 
 .about_me {
   display: flex;
@@ -146,14 +138,28 @@ header {
   /* border-bottom: 2px solid #e67e22;  */
 }
 
+.my-name-about {
+  float: left;
+  list-style: none;
+  margin-top: 5px;
+  color: white;
+  /* display: inline-block; */
+  margin-left: 0%;
+  /* padding for Willie's background color */
+  padding-left: 10%;
+  font-size: 220%;
+  background-color: #6466ed;
+}
+
 /* MY PICTURE */
 .my-picture {
   float: left;
+  margin-top: 20px;
   margin-left: 20px;
   margin-right: 40px;
-  width: 40%;
-  height: 600px;
-  text-align: center;
+  width: 50%;
+  height: 800px;
+  /* text-align: center; */
 }
 
 .about-info {
@@ -366,6 +372,27 @@ background:none;
     justify-content: space-between;
     align-items: center;
   }
+
+  .subtitle {
+    display: flex;
+    /* keeps Welcome to my Portfolio! My name is Willie horizontally to the left */
+    /* transform: translate(x-axis, y-axis)*/
+    transform: translate(5%, -55%);
+    background-color: #6466ed;
+    margin-left: 40%;
+    height: 15%;
+    width: 70%;
+    /* padding: top, right, bottom, left */
+    /* padding: 0px 0px 0% 10%; */
+  }
+
+  .subtitle h2 {
+    display: flex;
+    height: auto;
+    font-size: 100%;
+    margin-left: 20%;
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 620px) {
@@ -391,6 +418,53 @@ background:none;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  /* when the screen is 680px set the direction of the flex items to be in a row */
+
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  nav ul li {
+    flex: 0 0 3rem;
+  }
+
+  .about_me {
+    margin-top: 35%;
+  }
+
+  .nav .nav-abou-link {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .subtitle {
+    display: flex;
+    /* keeps Welcome to my Portfolio! My name is Willie horizontally to the left */
+    /* transform: translate(x-axis, y-axis)*/
+    transform: translate(5%, -55%);
+    background-color: #6466ed;
+    margin-left: 30%;
+    height: 15%;
+    width: 70%;
+    /* padding: top, right, bottom, left */
+    /* padding: 0px 0px 0% 10%; */
+  }
+
+  .subtitle h2 {
+    display: flex;
+    height: auto;
+    font-size: 100%;
+    margin-left: 20%;
+    width: 100%;
   }
 }
 
