@@ -21,7 +21,7 @@ body {
 }
 
 /* ------------------------------------*/
-/*             HEADERS                 */
+/*      LANDING-PAGE HEADER            */
 /* ------------------------------------*/
 
 header {
@@ -39,15 +39,16 @@ header {
   height: 150vh;
 }
 
-.current {
+/* .current {
+  border-bottom: 2px;
   border-color: orange;
-}
+} */
 
 .subtitle {
   display: flex;
   /* keeps Welcome to my Portfolio! My name is Willie horizontally to the left */
   /* transform: translate(x-axis, y-axis)*/
-  transform: translate(5%, 20%);
+  transform: translate(5%, 220%);
   background-color: #6466ed;
   margin-left: 54%;
   height: 15%;
@@ -66,7 +67,8 @@ header {
   list-style: none;
   margin-top: 2px;
   margin-right: 55px;
-  font-size: 100%;
+  padding-right: 0px;
+  font-size: 125%;
   color: white;
 }
 
@@ -138,6 +140,13 @@ header {
   /* border-bottom: 2px solid #e67e22;  */
 }
 
+/* create two columns and two rows (css grid) */
+/* .about-a {
+  display: grid;
+  grid-template-columns: 100% 100%;
+  grid-template-rows: 80% 20%;
+} */
+
 .my-name-about {
   float: left;
   list-style: none;
@@ -167,6 +176,92 @@ header {
   /* background-color: gray; */
 }
 
+/*==========================*/
+/*        CONTACT           */
+/*==========================*/
+
+.nav-contact-link {
+  display: flex;
+  /* flex-wrap: wrap; */
+  float: right;
+  list-style: none;
+  margin-top: -50px;
+  margin-right: 55px;
+  margin-bottom: 200px;
+  font-size: 125%;
+  color: white;
+}
+
+#header-contact {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(./img/pizza.jpg) 20% 30% / cover;
+  height: 6rem;
+  border-bottom: 3px solid blue;
+  /* margin-bottom: 30px; */
+}
+
+/* create two columns and two rows (css grid) */
+/* .about-a {
+    display: grid;
+    grid-template-columns: 100% 100%;
+    grid-template-rows: 80% 20%;
+  } */
+
+.my-name-contact {
+  float: left;
+  list-style: none;
+  margin-top: 5px;
+  color: white;
+  /* display: inline-block; */
+  margin-left: 0%;
+  /* padding for Willie's background color */
+  padding-left: 10%;
+  font-size: 220%;
+  background-color: #6466ed;
+}
+
+.hear-from-you {
+  text-align: center;
+  margin-left: 40px;
+  margin-right: 0px;
+  margin-bottom: 20px;
+}
+
+.section-contact-form {
+  width: 50%;
+  margin: 0 auto;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  /* so that fields fill the whole area */
+  width: 150%;
+  /* to make the fields a litte bit bigger */
+  padding: 7px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
+
+input[type="checkbox"] {
+  /* margin: top right bottom left  */
+  margin: 15px 5px 15px 0;
+}
+
+textarea {
+  /* make the message area larger */
+  height: 100px;
+}
+
+/* adjusting footer height for contact page */
+.my-footer-contact {
+  margin-top: 95%;
+  background: hsl(248, 53%, 58%);
+  color: #fff;
+  height: 100px;
+}
+
 /* ====================== */
 /*       FOOTER          */
 /* ===================== */
@@ -176,6 +271,7 @@ header {
   color: #fff;
   height: 100px;
 }
+
 .footer-content {
   display: flex;
   justify-content: space-between;
