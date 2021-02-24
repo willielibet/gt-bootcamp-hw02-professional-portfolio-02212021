@@ -114,7 +114,7 @@ header {
   /* flex-wrap: wrap; */
   float: right;
   list-style: none;
-  /* margin-top: 2px; */
+  /* margin-top: -50px; */
   margin-right: 55px;
   margin-bottom: 200px;
   font-size: 125%;
@@ -185,7 +185,7 @@ header {
   /* flex-wrap: wrap; */
   float: right;
   list-style: none;
-  margin-top: -50px;
+  /* margin-top: -50px; */
   margin-right: 55px;
   margin-bottom: 200px;
   font-size: 125%;
@@ -256,6 +256,50 @@ textarea {
 
 /* adjusting footer height for contact page */
 .my-footer-contact {
+  margin-top: 95%;
+  background: hsl(248, 53%, 58%);
+  color: #fff;
+  height: 100px;
+}
+
+/*========================*/
+/*     WORK PAGE      */
+/*========================*/
+.nav-work-link {
+  display: flex;
+  /* flex-wrap: wrap; */
+  float: right;
+  list-style: none;
+  /* margin-top: -50px; */
+  margin-right: 55px;
+  margin-bottom: 200px;
+  font-size: 125%;
+  color: white;
+}
+
+#header-work {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(./img/pizza.jpg) 20% 30% / cover;
+  height: 6rem;
+  border-bottom: 3px solid blue;
+  /* margin-bottom: 30px; */
+}
+
+.my-name-work {
+  float: left;
+  list-style: none;
+  margin-top: 5px;
+  color: white;
+  /* display: inline-block; */
+  margin-left: 0%;
+  /* padding for Willie's background color */
+  padding-left: 10%;
+  font-size: 220%;
+  background-color: #6466ed;
+}
+
+/* adjusting footer height for work page */
+.my-footer-work {
   margin-top: 95%;
   background: hsl(248, 53%, 58%);
   color: #fff;
