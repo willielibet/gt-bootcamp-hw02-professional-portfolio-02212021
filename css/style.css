@@ -311,7 +311,8 @@ textarea {
 /* ===================== */
 .my-footer {
   margin-top: 10%;
-  background: hsl(248, 53%, 58%);
+  /* background: hsl(248, 53%, 58%); */
+  background: MediumSeaGreen;
   color: #fff;
   height: 100px;
 }
