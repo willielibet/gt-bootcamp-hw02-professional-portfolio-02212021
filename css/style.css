@@ -171,10 +171,10 @@ header {
   /* text-align: center; */
 }
 
-.about-info {
-  display: grid;
-  /* background-color: gray; */
-}
+/* .about-info {
+  display: grid;*/
+/* background-color: gray; */
+/*} */
 
 /*==========================*/
 /*        CONTACT           */
@@ -296,6 +296,43 @@ textarea {
   padding-left: 10%;
   font-size: 220%;
   background-color: #6466ed;
+}
+
+/* formatting the portfolio's grid */
+/* centers My Work and Please, take a look at some of my projects */
+.section-title,
+.take-a-look {
+  text-align: center;
+}
+
+/* create three columns and two rows (css grid) */
+.items {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+  /* background-image: center; */
+}
+
+/* resize portfolio images */
+.img-size {
+  height: 50%;
+  width: 50%;
+  /* gap between My Work and header */
+  margin-top: 100px;
+}
+
+.big-image-size {
+  margin-top: 15px;
+  display: flex;
+  /* grid-template-columns: repeat(2, 1fr); */
+  /* box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3); */
+  height: 60%;
+  width: 60%;
+  /* float: right; */
+  /* text-align: right; */
+  /* justify-content: right; */
+  /* background-image: center; */
 }
 
 /* adjusting footer height for work page */
@@ -533,6 +570,19 @@ background:none;
     font-size: 100%;
     margin-left: 20%;
     width: 100%;
+  }
+
+  /* create three columns and two rows (css grid) */
+  .items {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* resize portfolio images */
+  .img-size {
+    height: 30%;
+    width: 30%;
+    margin-top: 50px;
   }
 }
 
