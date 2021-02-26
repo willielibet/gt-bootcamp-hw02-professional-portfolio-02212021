@@ -631,3 +631,40 @@ textarea {
     align-items: center;
   }
 }
+
+/* media query for footer */
+@media screen and (max-width: 480px) {
+  .my-footer {
+    display: flex;
+    flex-direction: wrap;
+    justify-content: space-around;
+    text-color: blue;
+  }
+  .footer-content container {
+    display: flex;
+    flex-direction: wrap;
+    justify-content: space-around;
+    text-color: blue;
+  }
+
+  .social {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-color: blue;
+  }
+
+  .fab {
+    display: flex;
+    flex-direction: wrap;
+    justify-content: space-around;
+    text-color: blue;
+  }
+
+  .contact-me {
+    display: flex;
+    flex-direction: wrap;
+    justify-content: space-between;
+    text-color: blue;
+  }
+}
