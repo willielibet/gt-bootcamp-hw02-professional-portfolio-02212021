@@ -9,7 +9,7 @@
 }
 
 html {
-  background-color: #ffbc00;
+  background-color: MediumSeaGreen;
   color: #fff;
   font-family: "Lato", "Arial", sans-serif;
   font-weight: 300;
@@ -39,22 +39,16 @@ header {
   height: 150vh;
 }
 
-/* .current {
-  border-bottom: 2px;
-  border-color: orange;
-} */
-
 .subtitle {
   display: flex;
   /* keeps Welcome to my Portfolio! My name is Willie horizontally to the left */
   /* transform: translate(x-axis, y-axis)*/
   transform: translate(5%, 220%);
-  background-color: #6466ed;
+  /* background-color: #6466ed; */
+  background-color: mediumseagreen;
   margin-left: 54%;
   height: 15%;
   width: 40%;
-  /* padding: top, right, bottom, left */
-  /* padding: 0px 0px 0% 10%; */
 }
 
 .subtitle h2 {
@@ -83,7 +77,8 @@ header {
   /* padding for Willie's background color */
   padding-left: 10%;
   font-size: 220%;
-  background-color: #6466ed;
+  /* background-color: #6466ed; */
+  background-color: mediumseagreen;
 }
 
 /*========================*/
@@ -93,8 +88,6 @@ header {
   padding-top: 15px;
   text-align: center;
   line-height: 145%;
-  /* width: 70%; */
-  /* margin-left: 15%; */
 }
 
 .wheelhouses {
@@ -125,8 +118,7 @@ header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url(./img/pizza.jpg) 20% 30% / cover;
   height: 6rem;
-  border-bottom: 3px solid blue;
-  /* margin-bottom: 30px; */
+  border-bottom: 3px solid MediumSeaGreen;
 }
 
 .about_me {
@@ -137,15 +129,7 @@ header {
   text-align: center;
   text-decoration: underline;
   text-decoration-color: orange;
-  /* border-bottom: 2px solid #e67e22;  */
 }
-
-/* create two columns and two rows (css grid) */
-/* .about-a {
-  display: grid;
-  grid-template-columns: 100% 100%;
-  grid-template-rows: 80% 20%;
-} */
 
 .my-name-about {
   float: left;
@@ -157,7 +141,8 @@ header {
   /* padding for Willie's background color */
   padding-left: 10%;
   font-size: 220%;
-  background-color: #6466ed;
+  /* background-color: #6466ed; */
+  background-color: MediumSeaGreen;
 }
 
 /* MY PICTURE */
@@ -168,13 +153,7 @@ header {
   margin-right: 40px;
   width: 50%;
   height: 800px;
-  /* text-align: center; */
 }
-
-/* .about-info {
-  display: grid;*/
-/* background-color: gray; */
-/*} */
 
 /*==========================*/
 /*        CONTACT           */
@@ -196,28 +175,20 @@ header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url(./img/pizza.jpg) 20% 30% / cover;
   height: 6rem;
-  border-bottom: 3px solid blue;
-  /* margin-bottom: 30px; */
+  border-bottom: 3px solid MediumSeaGreen;
 }
-
-/* create two columns and two rows (css grid) */
-/* .about-a {
-    display: grid;
-    grid-template-columns: 100% 100%;
-    grid-template-rows: 80% 20%;
-  } */
 
 .my-name-contact {
   float: left;
   list-style: none;
   margin-top: 5px;
   color: white;
-  /* display: inline-block; */
   margin-left: 0%;
   /* padding for Willie's background color */
   padding-left: 10%;
   font-size: 220%;
-  background-color: #6466ed;
+  /* background-color: #6466ed; */
+  background-color: MediumSeaGreen;
 }
 
 .hear-from-you {
@@ -245,7 +216,6 @@ textarea {
 }
 
 input[type="checkbox"] {
-  /* margin: top right bottom left  */
   margin: 15px 5px 15px 0;
 }
 
@@ -256,8 +226,9 @@ textarea {
 
 /* adjusting footer height for contact page */
 .my-footer-contact {
-  margin-top: 95%;
-  background: hsl(248, 53%, 58%);
+  margin-top: 20%;
+  /* background: hsl(248, 53%, 58%); */
+  background: MediumSeaGreen;
   color: #fff;
   height: 100px;
 }
@@ -281,8 +252,7 @@ textarea {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url(./img/pizza.jpg) 20% 30% / cover;
   height: 6rem;
-  border-bottom: 3px solid blue;
-  /* margin-bottom: 30px; */
+  border-bottom: 3px solid mediumseagreen;
 }
 
 .my-name-work {
@@ -295,7 +265,7 @@ textarea {
   /* padding for Willie's background color */
   padding-left: 10%;
   font-size: 220%;
-  background-color: #6466ed;
+  background-color: mediumseagreen;
 }
 
 /* formatting the portfolio's grid */
@@ -303,6 +273,13 @@ textarea {
 .section-title,
 .take-a-look {
   text-align: center;
+  margin-bottom: 10px;
+}
+
+.work-grid {
+  display: grid;
+  grid-template-columns: 2;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
 }
 
 /* create three columns and two rows (css grid) */
@@ -311,7 +288,6 @@ textarea {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
-  /* background-image: center; */
 }
 
 /* resize portfolio images */
@@ -322,23 +298,29 @@ textarea {
   margin-top: 100px;
 }
 
+.work-container {
+  margin-top: 40px;
+  margin-left: 1px;
+  width: 100%;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+}
 .big-image-size {
-  margin-top: 15px;
-  display: flex;
-  /* grid-template-columns: repeat(2, 1fr); */
-  /* box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3); */
-  height: 60%;
-  width: 60%;
-  /* float: right; */
-  /* text-align: right; */
-  /* justify-content: right; */
-  /* background-image: center; */
+  margin-top: 30px;
+  height: 90%;
+}
+
+.current-work {
+  float: left;
+}
+
+.col-md-2 {
+  margin-top: 20px;
 }
 
 /* adjusting footer height for work page */
 .my-footer-work {
   margin-top: 95%;
-  background: hsl(248, 53%, 58%);
+  /* background: hsl(248, 53%, 58%); */
   color: #fff;
   height: 100px;
 }
@@ -418,37 +400,6 @@ textarea {
   nav ul li {
     flex: 0 0 3rem;
   }
-
-  /* nav ul li ul li {
-    flex: 0 0 2rem;
-} */
-
-  /* li ul li a {
-    padding: .3rem 0;
-    font-size: .8rem;
-} */
-
-  /* li ul { 
-    display:none; */
-  /* text-align:center; */
-  /* position: absolute;
-    background-color: rgb(187, 209, 206);
-    width: 6rem;
-}  */
-
-  /* make the width of the sub items the same as the width of the main items */
-  /* li ul li {
-    width: 6rem;
-} */
-
-  /* nav ul li:hover ul {
-    display:flex;
-    flex-direction: column;
-} */
-
-  /* nav ul li ul li:hover {
-background:none; 
-} */
 
   .about_me {
     margin-top: 20%;
@@ -560,8 +511,6 @@ background:none;
     margin-left: 40%;
     height: 15%;
     width: 70%;
-    /* padding: top, right, bottom, left */
-    /* padding: 0px 0px 0% 10%; */
   }
 
   .subtitle h2 {
@@ -646,8 +595,6 @@ background:none;
     margin-left: 30%;
     height: 15%;
     width: 70%;
-    /* padding: top, right, bottom, left */
-    /* padding: 0px 0px 0% 10%; */
   }
 
   .subtitle h2 {
