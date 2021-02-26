@@ -447,7 +447,6 @@ textarea {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    /* align-items: center; */
   }
 }
 
@@ -507,7 +506,8 @@ textarea {
     /* keeps Welcome to my Portfolio! My name is Willie horizontally to the left */
     /* transform: translate(x-axis, y-axis)*/
     transform: translate(5%, -55%);
-    background-color: #6466ed;
+    /* background-color: #6466ed; */
+    background-color: mediumseagreen;
     margin-left: 40%;
     height: 15%;
     width: 70%;
@@ -590,8 +590,8 @@ textarea {
     display: flex;
     /* keeps Welcome to my Portfolio! My name is Willie horizontally to the left */
     /* transform: translate(x-axis, y-axis)*/
-    transform: translate(5%, -55%);
-    background-color: #6466ed;
+    transform: translate(5%, -10%);
+    background-color: mediumseagreen;
     margin-left: 30%;
     height: 15%;
     width: 70%;
