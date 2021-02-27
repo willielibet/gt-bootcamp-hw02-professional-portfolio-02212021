@@ -363,6 +363,13 @@ textarea {
   background: orange;
 }
 
+.contact-me {
+    display: flex;
+    flex-direction: column-reverse;
+    padding-right: 20px;
+    /* font-size: 200px; */
+}
+
 /* MEDIA QUERIES */
 /* SOURCE: https://codepen.io/pageboy/pen/MWboVVV */
 
@@ -391,6 +398,14 @@ textarea {
     height: 80%;
     width: 90%;
   }
+
+  .contact-me {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    align-items: flex-start;
+    padding-right: 20px;
+  }      
 }
 
 @media screen and (max-width: 1050px) {
@@ -424,6 +439,18 @@ textarea {
     justify-content: space-between;
     align-items: center;
   }
+
+  .subtitle {
+    display: flex;
+    /* keeps Welcome to my Portfolio! My name is Willie horizontally to the left */
+    /* transform: translate(x-axis, y-axis)*/
+    transform: translate(-20%, 25%);
+    /* background-color: #6466ed; */
+    background-color: mediumseagreen;
+    margin-left: 40%;
+    height: 15%;
+    width: 70%;
+
 }
 
 @media screen and (max-width: 780px) {
@@ -459,7 +486,7 @@ textarea {
     display: flex;
     /* keeps Welcome to my Portfolio! My name is Willie horizontally to the left */
     /* transform: translate(x-axis, y-axis)*/
-    transform: translate(5%, 25%);
+    transform: translate(-20%, 25%);
     /* background-color: #6466ed; */
     background-color: mediumseagreen;
     margin-left: 40%;
@@ -551,6 +578,18 @@ textarea {
     width: 30%;
     margin-top: 50px;
   }
+
+  .subtitle {
+    display: flex;
+    /* keeps Welcome to my Portfolio! My name is Willie horizontally to the left */
+    /* transform: translate(x-axis, y-axis)*/
+    transform: translate(-20%, 25%);
+    /* background-color: #6466ed; */
+    background-color: mediumseagreen;
+    margin-left: 40%;
+    height: 15%;
+    width: 70%;
+  }
 }
 
 @media screen and (max-width: 620px) {
@@ -579,7 +618,7 @@ textarea {
   }
 }
 
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 590px) {
   /* when the screen is 680px set the direction of the flex items to be in a row */
 
   nav ul {
@@ -597,12 +636,12 @@ textarea {
     margin-top: 35%;
   }
 
-  .nav .nav-abou-link {
+  /* .nav .nav-abou-link {
     display: flex;
     flex-wrap: column;
     justify-content: space-between;
     align-items: center;
-  }
+  } */
 
   .subtitle {
     display: flex;
@@ -630,31 +669,6 @@ textarea {
   }
 }
 
-@media screen and (max-width: 470px) {
-  /* when the screen is 780px set the direction of the flex items to be in a row */
-
-  nav ul {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
-  }
-
-  nav ul li {
-    flex: 0 0 3rem;
-  }
-
-  .about_me {
-    margin-top: 55%;
-  }
-
-  .nav .nav-about {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-  }
-}
 
 /* media query for footer */
 @media screen and (max-width: 480px) {
@@ -662,36 +676,82 @@ textarea {
     display: flex;
     flex-direction: wrap;
     justify-content: space-around;
-    text-color: blue;
   }
   .footer-content container {
     display: flex;
     flex-direction: wrap;
     justify-content: space-around;
-    text-color: blue;
   }
 
   .social {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    text-color: blue;
   }
 
   .fab {
     display: flex;
     flex-direction: wrap;
     justify-content: space-around;
-    text-color: blue;
   }
 
   .contact-me {
     display: flex;
     flex-direction: wrap;
     justify-content: space-between;
-    text-color: blue;
   }
 }
+
+
+
+@media screen and (max-width: 470px) {
+    /* when the screen is 780px set the direction of the flex items to be in a row */
+  
+    nav ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-end;
+    }
+  
+    nav ul li {
+      flex: 0 0 3rem;
+    }
+  
+    .about_me {
+      margin-top: 55%;
+    }
+  
+    .nav .nav-about {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .subtitle {
+      display: flex;
+      /* keeps Welcome to my Portfolio! My name is Willie horizontally to the left */
+      /* transform: translate(x-axis, y-axis)*/
+      transform: translate(-20%, 25%);
+      /* background-color: #6466ed; */
+      background-color: mediumseagreen;
+      margin-left: 40%;
+      height: 15%;
+      width: 70%;
+  }
+
+
+/* media query for footer */
+@media screen and (max-width: 440px) { 
+    .contact-me {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+  
+
+
 
 @media screen and (max-width: 415px) {
   .big-image-size {
@@ -699,4 +759,40 @@ textarea {
     height: 80%;
     width: 90%;
   }
+
+  .contact-me {
+    display: flex;
+    flex-direction: column-reverse;
+    padding-right: 20px;
+    /* font-size: 200px; */
 }
+
+.nav-about-link {
+    display: flex;
+    flex-direction: row;
+    padding-right: 0px;
+}
+
+}
+
+@media screen and (max-width: 400px) {
+    .navbar .navbar-expand-sm .nav0-items .nav-about-link {
+        display: flex;
+        /* justify-content: flex-start; */
+        flex-flow: column; 
+        font-size: 40%;
+        /* flex: 1 1 auto; */
+      }
+    }
+
+@media screen and (max-width: 200px) {
+  
+  .nav-about-link {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      padding-right: 0px;
+  }
+  
+}
+  
