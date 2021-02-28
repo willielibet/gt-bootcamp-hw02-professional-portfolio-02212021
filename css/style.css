@@ -28,7 +28,7 @@ body {
 header {
   /* makes header's bg image kind of faded */
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(./img/pizza.jpg);
+    url(./img/frontal.jpeg);
   /* background-size: cover; */
   background-position: center;
   /* height: ; */
@@ -129,7 +129,7 @@ header {
 #header-about {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url(./img/pizza.jpg) 20% 30% / cover;
-  height: 12rem;
+  height: 10rem;
   border-bottom: 3px solid MediumSeaGreen;
 }
 
@@ -186,7 +186,7 @@ header {
 #header-contact {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url(./img/pizza.jpg) 20% 30% / cover;
-  height: 6rem;
+  height: 10rem;
   border-bottom: 3px solid MediumSeaGreen;
 }
 
@@ -262,8 +262,8 @@ textarea {
 
 #header-work {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(./img/pizza.jpg) 20% 30% / cover;
-  height: 6rem;
+    url(./img/frontal.jpeg) 20% 30% / cover;
+  height: 10rem;
   border-bottom: 3px solid mediumseagreen;
 }
 
@@ -304,8 +304,8 @@ textarea {
 
 /* resize portfolio images */
 .img-size {
-  height: 50%;
-  width: 50%;
+  height: 278px;
+  width: 208px;
   /* gap between My Work and header */
   margin-top: 100px;
 }
